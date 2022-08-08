@@ -16,6 +16,7 @@ window.neatify = {
         var js =  this.responseText;
         js = js.replaceAll("\n", "");
         js = js.replaceAll("\x09", "");
+        _callback(js);
       }
     };
     xhttp.open("GET", url, true);
