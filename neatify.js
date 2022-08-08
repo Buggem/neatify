@@ -17,7 +17,7 @@ window.neatify = {
         js = js.replaceAll("\x09", "");
         js = js.split("\n", "");
         for(let i = 0; i < js.length; i++) {
-            js[i] = js.split("\/\/")[0];
+            js[i] = js[i].split("\/\/")[0];
         }
         js = js.join("");
         _callback(js);
