@@ -15,7 +15,7 @@ window.neatify = {
       if (this.readyState == 4 && this.status == 200) {
         var js =  this.responseText;
         js = js.replaceAll("\x09", "");
-        js = js.split("\n", "");
+        js = js.split("\n");
         for(let i = 0; i < js.length; i++) {
             js[i] = js[i].split("\/\/")[0];
         }
